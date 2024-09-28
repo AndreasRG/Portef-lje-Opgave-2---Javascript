@@ -1,4 +1,14 @@
+/*Global Settings*/
+body {
+    font: normal 17px/1.5 "roboto", sans-serif;
+}
 
+button {
+    font: normal 15px/1.5 "roboto", sans-serif;
+}
+
+
+/*Custom Imported Settings*/
 
 
 /*Navbar Settings*/
@@ -6,7 +16,7 @@
     height: 42px;
     width: 42px;
     background-color: white;
-    border: white;
+    border: none;
     border-radius: 21px;
 }
 
@@ -23,4 +33,43 @@
 .voiceInputButton img {
     height: 24px;
     width: 24px;
+}
+
+
+
+/*Category bar Settings*/
+#categorySelect {
+
+}
+
+.categoryList {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    column-gap: 15px;
+}
+
+.categoryList li button {
+    border: none;
+    border-radius: 7px;
+    height: 30px;
+
+}
+
+
+/*Recommended videos Settings*/
+#recommendedVideos {
+    width: 100px;
+}
+
+.recommendedVideosList {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    column-gap: 15px;
+}
+
+.recommendedVideosList img {
+    height: 50%;
+    width: 100%;
 }
