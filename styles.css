@@ -1,0 +1,26 @@
+
+
+
+/*Navbar Settings*/
+.menuButton {
+    height: 42px;
+    width: 42px;
+    background-color: white;
+    border: white;
+    border-radius: 21px;
+}
+
+.menuButton:hover {
+    background-color: lightgrey;
+    transition: 0.3s;
+}
+
+.logoNavbar img {
+    height: 24px;
+    width: 90px;
+}
+
+.voiceInputButton img {
+    height: 24px;
+    width: 24px;
+}
