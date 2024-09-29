@@ -16,7 +16,25 @@ h3 {
     color: dimgrey;
 }
 
+a:link {
+    text-decoration: none;
+    color: white;
+}
 
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
 
 button {
     font: normal 15px/0.01 "roboto", sans-serif;
@@ -24,15 +42,23 @@ button {
 
 
 /*Custom Imported Settings*/
-/*940px
+
 
 /*Navbar Settings*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .menuButton {
     height: 42px;
     width: 42px;
     background-color: white;
     border: none;
     border-radius: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .menuButton:hover {
@@ -40,9 +66,47 @@ button {
     transition: 0.3s;
 }
 
-.logoNavbar img {
+.logoNavbar {
     height: 24px;
     width: 90px;
+}
+
+.searchBar {
+    border: solid 1 grey;
+}
+
+.searchBar input {
+    border-radius: 20px 0 0 20px;
+    height: 35px;
+    width: 300px;
+    position: relative;
+    left: 5px;
+    bottom: 8px;
+}
+
+.searchButton {
+    border: solid 1px grey;
+    border-radius: 0 20px 20px 0;
+    height: 40px;
+    width: 60px;
+}
+
+.searchBar button img {
+    height: 23px;
+    width: 23px;
+}
+
+.voiceInputButton {
+    margin-left: 50px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.voiceInputButton:hover {
+    background-color: lightgrey;
+    transition: 0.2s;
 }
 
 .voiceInputButton img {
@@ -50,13 +114,89 @@ button {
     width: 24px;
 }
 
+.personalAccountControlButtons button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.personalAccountControlButtons button:nth-child(1) img, .personalAccountControlButtons button:nth-child(2) img {
+    height: 28px;
+    width: 28px;
+}
+
+.personalAccountControlButtons button:nth-child(1):hover, .personalAccountControlButtons button:nth-child(2):hover {
+    background-color: lightgrey;
+    transition: 0.2s;
+}
+
+.personalAccountControlButtons button:nth-child(2) {
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.personalAccountControlButtons a button img {
+    height: 34px;
+    width: 34px;
+    position: relative;
+    right: 5px;
+}
+
+.personalAccountControlButtons a button {
+    position: relative;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}
 
 
-/*Category bar Settings*/
-#categorySelect {
+/*Sections Flex Settings*/
+#leftNavSection {
+    float: left;
+    width: 50%;
+}
+
+#rightCategory&RecommendedVideos {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+
+/*Left Nav Bar Settings*/
+#leftNavSection {
+    border: none;
+    width: 75px;
 
 }
 
+#leftNavSection nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#leftNavSection li button {
+    height: 75px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: white;
+    border: solid 0 white;
+    font: normal 10px/1.5 "roboto", sans-serif;
+}
+
+#leftNavSection li button:hover {
+    background-color: lightgrey;
+}
+#leftNavSection li button img {
+    height: 30px;
+    width: 30px;
+}
+
+
+/*Category Bar Settings*/
 .categoryList {
     list-style: none;
     padding: 20px;
@@ -68,54 +208,71 @@ button {
     border: none;
     border-radius: 7px;
     height: 30px;
+}
 
+.categoryList li button:hover {
+    background-color: lightgrey;
+    transition: 0.2s;
 }
 
 
-/*Recommended videos Settings*/
-#recommendedVideos {
-
-}
-
+/*Recommended Videos Styles Settings*/
 .recommendedVideosList {
     list-style: none;
     font: normal 17px/1.5 "roboto", sans-serif;
     padding: 20px;
     display: flex;
-    flex-shrink: 3;
+    flex-direction: row;
     column-gap: 15px;
     flex-wrap: wrap;
 }
 
-.recommendedVideosList img:nth-child(1) {
-    width: 418px;
+.thumbnail img {
+    width: 340px;
+    height: 195px;
     border-radius: 12px;
 }
 
-.recommendedVideosList li div {
+.descriptionVideo {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.recommendedVideosList li div img {
+.descriptionVideo img {
     width: 36px;
     height: 36px;
     border-radius: 18px;
 }
 
-.recommendedVideosList li div div {
+.descriptionVideo div {
     display: flex;
     flex-direction: column;
 }
 
-.recommendedVideosList li div div .youtubeAccount img {
+.youtubeAccount img {
     height: 10px;
     width: 10px;
 }
 
-.videoTitle + .youtubeAccount + .viewCount {
+.videoTitle {
     line-height: 0;
     padding: 0;
     margin: 0;
+    margin-top: 10px;
+}
+
+.youtubeAccount {
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 22px;
+}
+
+.viewCount {
+    padding: 0;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 75px;
+    font: normal 14px/0 "roboto";
 }
